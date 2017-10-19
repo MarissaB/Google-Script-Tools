@@ -1,0 +1,20 @@
+Purpose: Open and close form responses in sync with Google calendar event times, limited to specific events with a keyword in their title.
+
+Example Use: Allowing players to check into an event when they arrive to track attendance at tabletop events, while preventing them from checking in when an event isn't running.
+We put general game announcements and release dates on the same calendar, hence the title filter for actual events players can attend.
+
+You will need:
+- A Google Calendar's name (usually your email unless you named it something specific)
+- A Google Form's ID (go into Edit mode and grab the long alphanumeric section of the URL)
+
+Sections:
+- Function to check the calendar for valid events
+- Function to create a timed trigger to open the form
+- Function to create a timed trigger to close the form
+
+How to implement:
+Follow the commented setup and set the main checkCalendar() function to run daily.
+
+Drawbacks:
+- Running the function more frequently than once daily can cause duplicate triggers to be created for events that existed during both runs.
+- Adding an event after the function runs means triggers won't be created and you'll have to run checkCalendar() manually.

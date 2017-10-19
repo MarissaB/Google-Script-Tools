@@ -1,11 +1,29 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B2BC690-7B10-4F6D-AEF1-0603F50FC6E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CalendarFormSync", "CalendarFormSync", "{74A0DA67-B334-4AE8-9B1D-E3F29347FBC8}"
+	ProjectSection(SolutionItems) = preProject
+		Calendar-Form-Sync.js = Calendar-Form-Sync.js
+		Calendar-Form-Sync.txt = Calendar-Form-Sync.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SyncFormQuestionChoices", "SyncFormQuestionChoices", "{D4EC1537-32AD-4C13-83C9-4FA2396D4E25}"
+	ProjectSection(SolutionItems) = preProject
+		Sync-Form-Question-Choices.js = Sync-Form-Question-Choices.js
+		Sync-Form-Question-Choices.txt = Sync-Form-Question-Choices.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{74A0DA67-B334-4AE8-9B1D-E3F29347FBC8} = {9B2BC690-7B10-4F6D-AEF1-0603F50FC6E3}
+		{D4EC1537-32AD-4C13-83C9-4FA2396D4E25} = {9B2BC690-7B10-4F6D-AEF1-0603F50FC6E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7B31DC9B-F1E4-4B9D-BAAE-84E472B91B47}

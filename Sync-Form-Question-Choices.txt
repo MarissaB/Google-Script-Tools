@@ -1,0 +1,21 @@
+Purpose: Sync answer choices on two different forms using the same dynamic list based on form submissions
+
+Example Use: Players and leaders must check in for an event and can do so from two different forms (one for customers, one for employees).
+Players must select their leader when they check in, so the list of options on both forms has to be able to update immediately when any leader checks in.
+
+You will need:
+- 2 Google Form IDs (go into Edit mode and grab the long alphanumeric section of the URL)
+- A Google Sheet with your answer options populated into a column (both form responses should feed into the same list)
+
+Sections:
+- Function to update the questions with the shared answer list
+-- Subfunction to obtain the individual question IDs on each form
+- Function to create a trigger to update when each form is submitted
+
+How to implement:
+Follow the commented setup. Note the code snippet for finding individual question IDs.
+
+Drawbacks:
+- Getting your shared answer list into the correct place in Sheets so it can be grabbed by a script is sometimes fiddly (the 'query' function is great for this).
+- Resetting the answer list requires a running the function manually when the list is empty, or you can set another trigger on your own (i.e. clearing the list at 2am daily).
+- If you edit your forms or remake your questions, you need to grab the IDs again.
